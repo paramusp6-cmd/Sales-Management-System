@@ -1,0 +1,45 @@
+-- BULK INSERT : BRANCHES
+
+BULK INSERT branches
+FROM 'C:\SQLData\branches.csv'
+WITH
+(FIRSTROW = 2,
+ FIELDTERMINATOR = ',',
+ ROWTERMINATOR = '0x0a',
+ TABLOCK);
+
+
+
+-- BULK INSERT : USERS
+
+BULK INSERT users
+FROM 'C:\SQLData\users.csv'
+WITH
+(FIRSTROW = 2,
+ FIELDTERMINATOR = ',',
+ ROWTERMINATOR = '0x0a',
+ TABLOCK);
+
+
+-- BULK INSERT : CUSTOMER SALES
+
+BULK INSERT customer_sales
+FROM 'C:\BulkData\customer_sales.csv'
+WITH
+(FIRSTROW = 2,
+ FIELDTERMINATOR = ',',
+ ROWTERMINATOR = '0x0a',
+ TABLOCK);
+
+
+-- BULK INSERT : PAYMENT SPLITS
+
+BULK INSERT payment_splits
+FROM 'C:\BulkData\payment_splits.csv'
+WITH
+(FIRSTROW = 2,
+ FIELDTERMINATOR = ',',
+ ROWTERMINATOR = '0x0a',
+ TABLOCK);
+
+
